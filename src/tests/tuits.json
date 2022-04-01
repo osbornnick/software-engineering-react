@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "123",
+        "tuit": "Alice's tuit",
+        "stats": {
+            "likes": 6,
+            "dislikes": 9
+        }
+    },
+    {
+        "_id": "234",
+        "tuit": "Bob's tuit",
+        "stats": {
+            "likes": 1,
+            "dislikes": 100
+        }
+    },
+    {
+        "_id": "345",
+        "tuit": "Charlie's tuit",
+        "stats": {
+            "likes": 5,
+            "dislikes": 89
+        }
+    }
+]

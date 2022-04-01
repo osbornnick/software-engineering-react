@@ -22,7 +22,7 @@ const MOCKED_USERS = [
     },
 ];
 
-test("user list renders static user array", () => {
+test.only("user list renders static user array", () => {
     render(
         <HashRouter>
             <UserList users={MOCKED_USERS} />

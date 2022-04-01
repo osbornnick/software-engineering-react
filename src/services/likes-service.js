@@ -13,7 +13,6 @@ export const findAllTuitsLikedByUser = (userId) =>
         .get(`${USERS_API}/${userId}/likes`)
         .then((response) => response.data)
         .catch((err) => {
-            console.log(err);
             return [];
         });
 
@@ -22,7 +21,6 @@ export const findAllUsersThatLikedTuit = (tid) =>
         .get(`${TUITS_API}/${tid}/likes`)
         .then((response) => response.data)
         .catch((err) => {
-            console.log(err);
             return [];
         });
 

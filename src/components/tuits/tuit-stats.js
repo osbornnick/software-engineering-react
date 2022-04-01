@@ -21,7 +21,7 @@ const TuitStats = ({ tuit, likeTuit = () => {}, dislikeTuit = () => {} }) => {
             return d.includes(tuit._id);
         });
     return (
-        <div className="row mt-2">
+        <div className="row mt-2 stats">
             <div className="col">
                 <i className="far fa-message me-1"></i>
                 {tuit.stats && tuit.stats.replies}

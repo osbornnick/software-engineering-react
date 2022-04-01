@@ -119,7 +119,7 @@ describe("retrieveAllTuits", () => {
 
         expect(retrievedTuits.length).toBeGreaterThanOrEqual(tuits.length);
         const tuitsWeInserted = retrievedTuits.filter(
-            (tuit) => tuit.postedBy._id === newUser._id
+            (tuit) => tuit.postedBy && tuit.postedBy._id === newUser._id
         );
 
         tuitsWeInserted.forEach((t) => {

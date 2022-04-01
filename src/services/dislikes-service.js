@@ -13,7 +13,6 @@ export const findAllTuitsDislikedByUser = (userId) =>
         .get(`${USERS_API}/${userId}/dislikes`)
         .then((response) => response.data)
         .catch((err) => {
-            console.log(err);
             return [];
         });
 
@@ -25,6 +24,5 @@ export const userDislikesTuit = (uid, tid) =>
         .put(`${USERS_API}/${uid}/dislikes/${tid}`)
         .then((response) => response.data)
         .catch((err) => {
-            console.log(err);
             return [];
         });
